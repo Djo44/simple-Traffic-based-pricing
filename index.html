@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Slider</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="heading-containter">
+        <h1 class="">Simple, Traffic-based pricing</h1>
+        <div class="paragraf-container">
+          <p class="p-1">Sign-up for our 30-day trial.</p>
+          <p class="p-1">No credit card required</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="row-container">
+            <p class="page-views">100K PAGEVIEWS</p>
+            <div class="price">
+              <h1 class="big-price text-secondary">$16.00</h1>
+              <h6>/month</h6>
+            </div>
+          </div>
+
+          <div class="slidecontainer pt-4 pb-4">
+            <input type="range" value="2" min="1" max="5" id="slider" />
+          </div>
+
+          <div class="toggle-container">
+            <p>Monthly Billing</p>
+            <label class="toggle-control">
+              <input type="checkbox" id="check" />
+              <span class="control"></span>
+            </label>
+            <p>Yearly Billing</p>
+            <p id="discount" class="discount">25% discount</p>
+          </div>
+        </div>
+        <div class="col-xs-12 list-container">
+          <ul>
+            <li><img src="/images/icon-check.svg" alt="" />Unlimited websites</li>
+            <li><img src="/images/icon-check.svg" alt="" />100% data ownership</li>
+            <li><img src="/images/icon-check.svg" alt="" />Email reports</li>
+          </ul>
+
+          <button class="btn btn-secondary btn-lg">Start my trial</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

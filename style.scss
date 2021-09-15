@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+
+.container-fluid {
+  height: 100vh;
+  background-color: hsl(230, 100%, 99%);
+  background-image: url(../images/bg-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Manrope", sans-serif;
+}
+
+.heading-containter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  background-image: url(../images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.paragraf-container {
+  display: flex;
+  flex-direction: row;
+  color: hsl(225, 20%, 60%);
+}
+
+.row {
+  top: 50%; /* IMPORTANT */
+  left: 50%; /* IMPORTANT */
+  display: flex;
+  position: absolute;
+  background-color: #fff;
+  width: 750px;
+  height: 500px;
+  margin-top: -200px; /* HALF OF THE HEIGHT */
+  margin-left: -375px; /* HALF OF THE WIDTH */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 0px hsl(225, 20%, 60%);
+}
+
+.row-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.row-container p {
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: hsl(225, 20%, 60%);
+}
+
+.row-container h6 {
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: hsl(225, 20%, 60%);
+  padding-left: 10px;
+}
+
+.big-price {
+  font-weight: bold;
+  color: hsl(227, 35%, 25%);
+}
+
+.btn {
+  border-radius: 30px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: end;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.toggle-container p {
+  margin: 20px;
+  font-size: 14px;
+  color: hsl(225, 20%, 60%);
+}
+
+.toggle-container .discount {
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: hsl(15, 100%, 70%);
+  background: hsl(14, 92%, 95%);
+}
+
+.toggle-container .dicount .toggle {
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: hsl(174, 86%, 45%);
+  background: hsl(14, 92%, 95%);
+}
+
+.list-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  border-top: 1px dotted hsl(225, 20%, 60%);
+}
+
+.list-container ul {
+  list-style: none;
+  align-self: center;
+  justify-self: center;
+  margin: 0;
+}
+
+.list-container ul img {
+  padding-right: 20px;
+  height: 15px;
+}
+
+.list-container ul li {
+  padding: 5px 0;
+}
+
+/* Range slider */
+
+input[type="range"] {
+  margin: auto;
+  -webkit-appearance: none;
+  position: relative;
+  overflow: hidden;
+  height: 40px;
+  width: -webkit-fill-available;
+  cursor: pointer;
+  border-radius: 0; /* iOS */
+}
+
+::-webkit-slider-runnable-track {
+  background: #ddd;
+}
+
+/*
+ * 1. Set to 0 width and remove border for a slider without a thumb
+ */
+::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px; /* 1 */
+  height: 40px;
+
+  background-repeat: no-repeat;
+  box-shadow: -100vw 0 0 100vw #b23cfd;
+  border: 2px solid #999; /* 1 */
+}
+
+::-moz-range-track {
+  height: 0px;
+  background: #ddd;
+}
+
+::-moz-range-thumb {
+  background: #fff;
+  height: 40px;
+  width: 20px;
+  border: 3px solid #999;
+  border-radius: 0 !important;
+  box-shadow: -100vw 0 0 100vw #b23cfd;
+  box-sizing: border-box;
+}
+
+::-ms-fill-lower {
+  background: #b23cfd;
+}
+
+::-ms-thumb {
+  background: #fff;
+  border: 2px solid #999;
+  height: 40px;
+  width: 20px;
+  box-sizing: border-box;
+}
+
+::-ms-ticks-after {
+  display: none;
+}
+
+::-ms-ticks-before {
+  display: none;
+}
+
+::-ms-track {
+  background: #ddd;
+  color: transparent;
+  height: 40px;
+  border: none;
+}
+
+::-ms-tooltip {
+  display: none;
+}
+
+/* end of range slider */
+
+/* checkbox switcher */
+
+$toggle-background-color-on: #b23cfd;
+$toggle-background-color-off: darkgray;
+$toggle-control-color: white;
+$toggle-width: 55px;
+$toggle-height: 25px;
+$toggle-gutter: 2px;
+$toggle-radius: 50%;
+$toggle-control-speed: 0.15s;
+$toggle-control-ease: ease-in;
+
+// These are our computed variables
+// change at your own risk.
+$toggle-radius: $toggle-height / 2;
+$toggle-control-size: $toggle-height - ($toggle-gutter * 2);
+
+.toggle-control {
+  display: block;
+  position: relative;
+  padding-left: $toggle-width;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  input:checked ~ .control {
+    background-color: $toggle-background-color-on;
+
+    &:after {
+      left: $toggle-width - $toggle-control-size - $toggle-gutter;
+    }
+  }
+
+  .control {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: $toggle-height;
+    width: $toggle-width;
+    border-radius: $toggle-radius;
+    background-color: $toggle-background-color-off;
+    transition: background-color $toggle-control-speed $toggle-control-ease;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: $toggle-gutter;
+      top: $toggle-gutter;
+      width: $toggle-control-size;
+      height: $toggle-control-size;
+      border-radius: $toggle-radius;
+      background: $toggle-control-color;
+      transition: left $toggle-control-speed $toggle-control-ease;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .row {
+    position: inherit;
+    height: 750px;
+    margin: auto;
+    padding: 0;
+    margin-bottom: 30px;
+    max-width: 350px !important;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .row-container {
+    flex-direction: column;
+  }
+
+  .toggle-container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .toggle-container p {
+    font-size: 12px;
+  }
+
+  .paragraf-container {
+    flex-direction: column;
+  }
+
+  h1 {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .list-container {
+    flex-direction: column;
+  }
+
+  .list-container ul li {
+    padding: 10px 0;
+  }
+
+  button {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 750px) and (min-width: 551px) {
+  .row {
+    position: inherit;
+    height: 750px;
+    margin: auto;
+    padding: 0;
+    margin-bottom: 30px;
+    max-width: 550px !important;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .row-container {
+    flex-direction: column;
+  }
+
+  .toggle-container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .toggle-container p {
+    font-size: 14px;
+  }
+
+  .paragraf-container {
+    flex-direction: column;
+  }
+
+  h1 {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .list-container {
+    flex-direction: column;
+  }
+
+  .list-container ul li {
+    padding: 10px 0;
+  }
+
+  button {
+    margin-top: 30px;
+  }
+}

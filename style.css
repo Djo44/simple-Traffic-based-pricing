@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+.container-fluid {
+  height: 100vh;
+  background-color: #fafbff;
+  background-image: url(../images/bg-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Manrope", sans-serif;
+}
+
+.heading-containter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30vh;
+  background-image: url(../images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.paragraf-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #858fad;
+}
+
+.row {
+  top: 50%;
+  /* IMPORTANT */
+  left: 50%;
+  /* IMPORTANT */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  background-color: #fff;
+  width: 750px;
+  height: 500px;
+  margin-top: -200px;
+  /* HALF OF THE HEIGHT */
+  margin-left: -375px;
+  /* HALF OF THE WIDTH */
+  padding: 40px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 4px 0px #858fad;
+          box-shadow: 0px 0px 4px 0px #858fad;
+}
+
+.row-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.row-container p {
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #858fad;
+}
+
+.row-container h6 {
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #858fad;
+  padding-left: 10px;
+}
+
+.big-price {
+  font-weight: bold;
+  color: #293356;
+}
+
+.btn {
+  border-radius: 30px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.toggle-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.toggle-container p {
+  margin: 20px;
+  font-size: 14px;
+  color: #858fad;
+}
+
+.toggle-container .discount {
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #ff8c66;
+  background: #feece7;
+}
+
+.toggle-container .dicount .toggle {
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #10d5c2;
+  background: #feece7;
+}
+
+.list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 40px;
+  border-top: 1px dotted #858fad;
+}
+
+.list-container ul {
+  list-style: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: 0;
+}
+
+.list-container ul img {
+  padding-right: 20px;
+  height: 15px;
+}
+
+.list-container ul li {
+  padding: 5px 0;
+}
+
+/* Range slider */
+input[type="range"] {
+  margin: auto;
+  -webkit-appearance: none;
+  position: relative;
+  overflow: hidden;
+  height: 40px;
+  width: -webkit-fill-available;
+  cursor: pointer;
+  border-radius: 0;
+  /* iOS */
+}
+
+::-webkit-slider-runnable-track {
+  background: #ddd;
+}
+
+/*
+ * 1. Set to 0 width and remove border for a slider without a thumb
+ */
+::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  /* 1 */
+  height: 40px;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: -100vw 0 0 100vw #b23cfd;
+          box-shadow: -100vw 0 0 100vw #b23cfd;
+  border: 2px solid #999;
+  /* 1 */
+}
+
+::-moz-range-track {
+  height: 0px;
+  background: #ddd;
+}
+
+::-moz-range-thumb {
+  background: #fff;
+  height: 40px;
+  width: 20px;
+  border: 3px solid #999;
+  border-radius: 0 !important;
+  box-shadow: -100vw 0 0 100vw #b23cfd;
+  box-sizing: border-box;
+}
+
+::-ms-fill-lower {
+  background: #b23cfd;
+}
+
+::-ms-thumb {
+  background: #fff;
+  border: 2px solid #999;
+  height: 40px;
+  width: 20px;
+  box-sizing: border-box;
+}
+
+::-ms-ticks-after {
+  display: none;
+}
+
+::-ms-ticks-before {
+  display: none;
+}
+
+::-ms-track {
+  background: #ddd;
+  color: transparent;
+  height: 40px;
+  border: none;
+}
+
+::-ms-tooltip {
+  display: none;
+}
+
+/* end of range slider */
+/* checkbox switcher */
+.toggle-control {
+  display: block;
+  position: relative;
+  padding-left: 55px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.toggle-control input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.toggle-control input:checked ~ .control {
+  background-color: #b23cfd;
+}
+
+.toggle-control input:checked ~ .control:after {
+  left: 32px;
+}
+
+.toggle-control .control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 55px;
+  border-radius: 12.5px;
+  background-color: darkgray;
+  -webkit-transition: background-color 0.15s ease-in;
+  transition: background-color 0.15s ease-in;
+}
+
+.toggle-control .control:after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 21px;
+  height: 21px;
+  border-radius: 12.5px;
+  background: white;
+  -webkit-transition: left 0.15s ease-in;
+  transition: left 0.15s ease-in;
+}
+
+@media screen and (max-width: 550px) {
+  .row {
+    position: inherit;
+    height: 750px;
+    margin: auto;
+    padding: 0;
+    margin-bottom: 30px;
+    max-width: 350px !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .row-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .toggle-container {
+    padding: 0;
+    margin: 0;
+  }
+  .toggle-container p {
+    font-size: 12px;
+  }
+  .paragraf-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  h1 {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  .list-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .list-container ul li {
+    padding: 10px 0;
+  }
+  button {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 750px) and (min-width: 551px) {
+  .row {
+    position: inherit;
+    height: 750px;
+    margin: auto;
+    padding: 0;
+    margin-bottom: 30px;
+    max-width: 550px !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .row-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .toggle-container {
+    padding: 0;
+    margin: 0;
+  }
+  .toggle-container p {
+    font-size: 14px;
+  }
+  .paragraf-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  h1 {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  .list-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .list-container ul li {
+    padding: 10px 0;
+  }
+  button {
+    margin-top: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
